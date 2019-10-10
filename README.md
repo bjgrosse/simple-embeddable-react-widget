@@ -1,5 +1,5 @@
 # A Simple Embeddable React Widget
-This project is a simple template for an embeddable React widget that can be inserted into a host website using a single &lt;script> tag. It supports JSX and is compiled using Webpack into a single .js file which can be static-hosted.
+This project is a simple template for an embeddable React widget that can be inserted into a host website using a single &lt;script> tag. It supports JSX, CSS styles, and is compiled using Webpack into a single .js file which can be static-hosted.
 
 Both synchronous and asynchronous loading is supported.
 
