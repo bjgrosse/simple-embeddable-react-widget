@@ -1,18 +1,22 @@
 # A Simple Embeddable React Widget
-A simple template for an embeddable react widget that can be inserted into a host website using a single &lt;script> tag. 
+This project is a simple template for an embeddable React widget that can be inserted into a host website using a single &lt;script> tag. It supports JSX and is compiled using Webpack into a single .js file which can be static-hosted.
 
-The project supports JSX and is compiled using Webpack into a single .js file which can be static-hosted.
-
-Both synchronous and asynchronous loading is supported
+Both synchronous and asynchronous loading is supported.
 
 # Overview
 1. The widget is instantiated when the .js package is loaded
 2. The host page supplies a **name** and a **targetElementId**
-2. The widget creates a global object with the name the host page supplies
-3. It renders the React component at the element specified by targetElementId
+3. The widget registers a global object with the name supplied by the host page 
+4. The widget renders the React component at the element specified by the host page
+5. The host page can communicate with the widget via the global object
+
+## Demo
+You can view a live demo of both synchronous and asynchronous loading here: 
+
+https://bjgrosse.github.io/simple-embeddable-react-widget/dist/
 
 ## Usage Example #1: Synchronous
-The widget can be embedded in two ways. The first is via a simple <script> tag reference as shown below:
+This method uses simple <script> tag reference as shown below:
 
 ```html
     <div id="root"></div>
@@ -74,3 +78,10 @@ $ ./node_modules/.bin/webpack --config webpack.config.js
 ```
 $ Jest
 ```
+
+# Acknowledgments
+I found helpful guidance in this project from the following sites:
+
+https://blog.jenyay.com/building-javascript-widget/
+
+https://github.com/seriousben/embeddable-react-widget
