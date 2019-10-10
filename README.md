@@ -79,4 +79,5 @@ $ Jest
 I found a lot of guidance in this project from the following sites:
 
 https://blog.jenyay.com/building-javascript-widget/
+
 https://github.com/seriousben/embeddable-react-widget
