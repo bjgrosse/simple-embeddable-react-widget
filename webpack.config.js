@@ -4,6 +4,8 @@ var copyWebpackPlugin = require('copy-webpack-plugin');
 const bundleOutputDir = './dist';
 
 module.exports = (env) => {
+    const isProductionBuild = env && env.production;
+
     return [{
         entry: './src/main.js',
         mode: 'production',
@@ -17,6 +19,10 @@ module.exports = (env) => {
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
                     use: ['babel-loader']
+                },
+                {
+                    test: /\.css$/i,
+                    use: ['style-loader', 'css-loader']
                 }
             ],
         },
