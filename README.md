@@ -12,6 +12,7 @@ Both synchronous and asynchronous loading is supported.
 
 ## Demo
 You can view a live demo of both synchronous and asynchronous loading here: 
+
 https://bjgrosse.github.io/simple-embeddable-react-widget/dist/
 
 ## Usage Example #1: Synchronous
