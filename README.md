@@ -10,8 +10,12 @@ Both synchronous and asynchronous loading is supported.
 4. The widget renders the React component at the element specified by the host page
 5. The host page can communicate with the widget via the global object
 
+## Demo
+You can view a live demo of both synchronous and asynchronous loading here: 
+https://bjgrosse.github.io/simple-embeddable-react-widget/dist/
+
 ## Usage Example #1: Synchronous
-The widget can be embedded in two ways. The first is via a simple <script> tag reference as shown below:
+This method uses simple <script> tag reference as shown below:
 
 ```html
     <div id="root"></div>
